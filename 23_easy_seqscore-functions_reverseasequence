@@ -1,0 +1,8 @@
+#(reduce
+  (fn 
+    [l n]
+    (cons n l)
+  )
+  []
+  %
+)

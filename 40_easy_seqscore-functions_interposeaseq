@@ -1,0 +1,15 @@
+(fn
+  [in lst]
+  (loop [out ()
+         l lst]
+    (if (= 0 (count l))
+      out
+      (if (= 0 (count out))
+        (recur (list (first l)) (rest l))
+        (let [newout (reverse (conj (conj (reverse out) in) (first l)))]
+          (recur newout (rest l))
+        )
+      )
+    )
+  )
+)

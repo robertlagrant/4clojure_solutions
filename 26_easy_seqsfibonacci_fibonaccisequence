@@ -1,0 +1,16 @@
+(fn 
+[n]
+  (if (= n 1)
+    '(1)
+    (loop [fibs '(1 1)]
+      (if (= n (count fibs))
+         fibs
+         (recur 
+           (let [rfibs (reverse fibs)]
+             (sort (conj fibs (+ (first rfibs) (second rfibs))))
+           )  ; end let
+         )  ; end recur
+      )  ; end if
+    )  ; end loop
+  )  ; end if
+) ; end fn

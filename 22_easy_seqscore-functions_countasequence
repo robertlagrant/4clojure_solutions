@@ -1,0 +1,10 @@
+(fn
+[lst]
+  (loop [l lst
+         n 0]
+     (if (= l [])
+        n
+        (recur (rest l) (inc n))
+     )
+  )
+)

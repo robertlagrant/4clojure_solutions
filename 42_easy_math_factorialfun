@@ -1,0 +1,3 @@
+(fn [n]
+  (reduce * (drop 1 (range (inc n))))
+)

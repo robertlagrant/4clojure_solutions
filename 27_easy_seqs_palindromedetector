@@ -1,0 +1,4 @@
+(fn
+[in]
+  (= (seq in) (reverse in))
+)

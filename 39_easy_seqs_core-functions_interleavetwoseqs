@@ -1,0 +1,14 @@
+(fn [seq1 seq2]
+  (loop [a seq1
+         b seq2
+         c ()]
+    (if (and (< 0 (count a)) (< 0 (count b)))
+      (recur
+        (rest a)
+        (rest b)
+        (reverse (conj (conj (reverse c) (first a)) (first b)))
+      )
+      c               
+    )
+  )
+)

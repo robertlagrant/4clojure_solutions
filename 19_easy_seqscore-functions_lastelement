@@ -1,0 +1,6 @@
+reduce 
+
+(fn 
+[l, current]
+  current
+)

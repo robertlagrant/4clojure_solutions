@@ -1,0 +1,3 @@
+(fn [k hashmap]
+  (and (contains? hashmap k) (= nil (hashmap k)))
+)

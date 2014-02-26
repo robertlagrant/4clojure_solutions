@@ -1,0 +1,4 @@
+(fn
+  [n v]
+  [(take n v) (drop n v)]
+)

@@ -1,0 +1,14 @@
+(fn
+[in]
+  (reduce
+    (fn
+      [out nextone]
+      (if (= (last out) nextone)
+        out
+        (conj out nextone)
+      )
+    )
+    []
+    in
+  )
+)

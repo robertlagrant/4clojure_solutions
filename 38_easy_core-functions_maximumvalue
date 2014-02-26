@@ -1,0 +1,1 @@
+(fn [& args] (reduce (fn [m n] (if (< m n) n m)) -1 args))

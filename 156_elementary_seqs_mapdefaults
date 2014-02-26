@@ -1,0 +1,11 @@
+(fn
+[default keylist]
+  (reduce
+    (fn
+      [kl k]
+      (merge kl (hash-map k default))
+     )
+     {}
+     keylist
+   )
+)

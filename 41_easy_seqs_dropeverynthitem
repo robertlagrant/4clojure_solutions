@@ -1,0 +1,6 @@
+(fn [lst n]
+  (map 
+    (partial nth lst) 
+    (map dec (filter #(not= 0 (mod % n)) (range (inc (count lst)))))
+  )
+)
