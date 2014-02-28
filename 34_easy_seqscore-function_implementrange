@@ -1,0 +1,4 @@
+(defn x
+[start end]
+  (filter #(< % end) (iterate inc start))
+)

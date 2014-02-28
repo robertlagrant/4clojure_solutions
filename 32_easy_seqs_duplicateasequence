@@ -1,0 +1,11 @@
+(fn
+[lst]
+  (reverse (reduce
+    (fn
+      [l element]
+      (conj (conj l element) element)
+    )
+    '()
+    lst
+  ))
+)
